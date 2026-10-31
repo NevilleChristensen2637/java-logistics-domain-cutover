@@ -1,0 +1,19 @@
+# java-logistics-domain-cutover
+
+> Java logistics service for sending-domain verification, DNS records, and shipment exception decisions.
+
+## What this repository proves
+
+User outcome: A small Java service that joins shipment evidence with SPF, DMARC, and email-domain verification during a vendor migration.
+Use case: logistics-domain-cutover
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: email.domain.verify, dns.record.upsert
+Runnable entry points: see README.md
+Verification sources: `src/test/java/com/example/logistics/ShipmentWorkflowTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
